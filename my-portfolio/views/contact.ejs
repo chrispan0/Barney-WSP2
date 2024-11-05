@@ -1,0 +1,27 @@
+<% layout('layout') %>
+<section id="contact">
+  <div class="contact container">
+    <div>
+      <h1 class="sectionTitle">Contact <span>Info</span></h1>
+    </div>
+    <div class="contactItems">
+      <div class="contactItem">
+        <div class="contactInfo">
+          <form action="#" method="post" class="phpEmailForm">
+            <p>Name</p>
+            <input type="text" name="name" placeholder="Your Name" required />
+            <p>Email</p>
+            <input type="email" name="email" placeholder="Your Email" required />
+            <p>Subject</p>
+            <input type="text" name="subject" placeholder="Subject" required />
+            <p>Message</p>
+            <textarea name="message" placeholder="Your Message" required style="height: 150px"></textarea>
+            <div class="button">
+              <button type="submit" class="button">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
