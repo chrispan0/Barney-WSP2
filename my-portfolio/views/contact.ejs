@@ -1,4 +1,4 @@
-<% layout('layout') %>
+
 <section id="contact">
   <div class="contact container">
     <div>
@@ -25,3 +25,10 @@
     </div>
   </div>
 </section>
+
+<script>
+  function clearForm(event) {
+    event.preventDefault();  // Prevents form submission
+    event.target.reset();    // Clears all form fields
+  }
+</script>
