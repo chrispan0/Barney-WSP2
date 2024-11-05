@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
+<head>
+    <meta charset='utf-8'>
     <link rel="stylesheet" href="/stylesheets/styles.css">
-    <style>html { scroll-behavior: smooth; }</style>
-  </head>
-  <body>
-    <% include partials/header %>
-    <main><%- body %></main>
-    <% include partials/footer %>
-  </body>
+    <title><%= title %></title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="header container">
+            <div class="navbar">
+                <div class="logo">
+                    <h1><span>B</span>.<span>A</span></h1>
+                </div>
+                <nav class="navlist">
+                    <div class="navlines">
+                        <div class="bar"></div>
+                    </div>
+                    <ul>
+                        <li><a href="/" class="active">Home</a></li>
+                        <li><a href="/about" class="active">About Me</a></li>
+                        <li><a href="/projects" class="active">Projects</a></li>
+                        <li><a href="/contact" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dynamic Page Content -->
+    <main>
+        <%- body %>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="footer container">
+            <div class="">
+                <p>You can reach me at </p>
+            </div>
+            <h2>barnabas.agbekorode@ontariotechu.net</h2>
+            <p>&copy; 2024 BA. All rights reserved</p>
+        </div>
+    </footer>
+</body>
 </html>
